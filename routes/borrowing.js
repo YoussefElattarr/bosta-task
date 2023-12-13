@@ -5,7 +5,6 @@ const sequelize = require("../config/dbConfig");
 require("dotenv").config({ path: "../.env" });
 const { Borrower, Book, Borrowing } = require("../models");
 const tokenSecret = process.env.TOKEN_SECRET;
-const { createObjectCsvStringifier } = require("csv-writer");
 
 const borrowingRoutes = express.Router();
 
